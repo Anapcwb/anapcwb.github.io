@@ -8,7 +8,8 @@ a {
 
 body {
     max-width: 600px;
-    margin: 100px auto;
+    padding: 10px;
+    margin: 90px auto;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     background-color: #fdfcdd;
