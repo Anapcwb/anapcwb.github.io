@@ -1,0 +1,24 @@
+.icon {
+    height: 20px;
+}
+
+a { 
+    text-decoration: none; 
+} 
+
+body {
+    max-width: 600px;
+    margin: 100px auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background-color: #fdfcdd;
+}
+
+p {
+    text-align: justify;
+}
+
+.icons {
+    padding-top: 15px;
+    text-align: center;
+}
