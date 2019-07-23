@@ -1,0 +1,169 @@
+/* Let's go!
+In order to give more style to the site findThePrecious, Sauron wants to be able to add rings on its pages. Full of rings, big, small, 
+with many different colors! So, with SCSS, you'll need to create a mixin called ring that draws a ring.
+
+Hint: a ring is nothing more than a square with an important border-radius, without background color but with a rather wide border.
+
+This mixin must allow you:
+
+Choose a size and a color for the ring
+A colored shadow must appear (depending on the size and color chosen)
+The thickness of the ring must be a function of the chosen size
+Once this mixin created, make a simple HTML page, called precious.html, corresponding to the image below and containing the rings.
+
+Hint: Uses a for loop in SCSS to display the succession of 6 nested horizontal rings, bigger and bigger. */
+@font-face {
+  font-family: myFirstFont;
+  src: url(fonts/anirm___.ttf);
+}
+
+nav {
+  font-family: "myFirstFont";
+  background: #ff5100;
+}
+
+nav a {
+  color: white;
+}
+
+nav a:hover {
+  color: white;
+}
+
+.ring-med {
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  border: 9.6px solid gold;
+  -webkit-box-shadow: inset 6px 3.6px 3.6px #e1b900, 6px 3.6px 3.6px #e1b900;
+          box-shadow: inset 6px 3.6px 3.6px #e1b900, 6px 3.6px 3.6px #e1b900;
+  display: inline-block;
+}
+
+.ring-sm {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  border: 4.8px solid orange;
+  -webkit-box-shadow: inset 3px 1.8px 1.8px #e18700, 3px 1.8px 1.8px #e18700;
+          box-shadow: inset 3px 1.8px 1.8px #e18700, 3px 1.8px 1.8px #e18700;
+  display: inline-block;
+}
+
+body {
+  font-family: "myFirstFont";
+  font-size: 10px;
+}
+
+body h1 {
+  font-size: 20px;
+}
+
+.row {
+  background: #ff5100;
+  padding: 20px;
+}
+
+.row p {
+  color: white;
+}
+
+.myPrecious {
+  padding: 50px;
+  background-color: beige;
+}
+
+.myPrecious h1 {
+  text-align: center;
+  margin: 50px;
+}
+
+.findIt {
+  text-align: center;
+  height: 80px;
+  vertical-align: middle;
+}
+
+.box {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ring-0 {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  border: 2.8px solid black;
+  -webkit-box-shadow: inset 1.75px 1.05px 1.05px black, 1.75px 1.05px 1.05px black;
+          box-shadow: inset 1.75px 1.05px 1.05px black, 1.75px 1.05px 1.05px black;
+  display: inline-block;
+  margin-right: -20px;
+}
+
+.ring-1 {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 4px solid black;
+  -webkit-box-shadow: inset 2.5px 1.5px 1.5px black, 2.5px 1.5px 1.5px black;
+          box-shadow: inset 2.5px 1.5px 1.5px black, 2.5px 1.5px 1.5px black;
+  display: inline-block;
+  margin-right: -25px;
+}
+
+.ring-2 {
+  width: 65px;
+  height: 65px;
+  border-radius: 100%;
+  border: 5.2px solid black;
+  -webkit-box-shadow: inset 3.25px 1.95px 1.95px black, 3.25px 1.95px 1.95px black;
+          box-shadow: inset 3.25px 1.95px 1.95px black, 3.25px 1.95px 1.95px black;
+  display: inline-block;
+  margin-right: -30px;
+}
+
+.ring-3 {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  border: 6.4px solid black;
+  -webkit-box-shadow: inset 4px 2.4px 2.4px black, 4px 2.4px 2.4px black;
+          box-shadow: inset 4px 2.4px 2.4px black, 4px 2.4px 2.4px black;
+  display: inline-block;
+  margin-right: -35px;
+}
+
+.ring-4 {
+  width: 95px;
+  height: 95px;
+  border-radius: 100%;
+  border: 7.6px solid black;
+  -webkit-box-shadow: inset 4.75px 2.85px 2.85px black, 4.75px 2.85px 2.85px black;
+          box-shadow: inset 4.75px 2.85px 2.85px black, 4.75px 2.85px 2.85px black;
+  display: inline-block;
+  margin-right: -40px;
+}
+
+.ring-5 {
+  width: 110px;
+  height: 110px;
+  border-radius: 100%;
+  border: 8.8px solid black;
+  -webkit-box-shadow: inset 5.5px 3.3px 3.3px black, 5.5px 3.3px 3.3px black;
+          box-shadow: inset 5.5px 3.3px 3.3px black, 5.5px 3.3px 3.3px black;
+  display: inline-block;
+  margin-right: -45px;
+}
+
+.bg-light {
+  background: #ff5100 !important;
+  color: white;
+}
+/*# sourceMappingURL=stylesheet.css.map */
